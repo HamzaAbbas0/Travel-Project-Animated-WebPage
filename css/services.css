@@ -1,0 +1,15 @@
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+header{
+    background-color: red ;
+    background-origin: padding-box;
+    font-size: 2rem;
+}
+#img{
+    height: 10rem;
+    width: 26rem;
+    padding-top: .7rem;
+    float: left;
+    
+}

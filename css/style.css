@@ -1,0 +1,132 @@
+*{
+    margin: 0;padding: 0; box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+   /* background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0,0,0,0.4)),url(../images/slider-apricot-tours-5.jpg);*/
+    background-repeat: no-repeat;
+    background-size: cover;
+     
+}
+nav{
+    width: 100%;
+    height: 15vh;   
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    text-transform: uppercase;
+    background:rgba(0,0,0,0.2);
+    padding-top: 40px;
+  
+
+}
+nav .logo{
+  width: 25%;text-align: center;
+  font-size: 20px;
+  display: inline-block;
+
+}
+nav .menu{
+    width: 40%;
+    justify-content: space-around;
+    color: white;
+    text-transform: uppercase;
+    word-spacing: 3px;
+
+}
+nav .menu a {
+    width: 40px;
+    color: white;
+    text-decoration: none;
+    padding-right: 60px;
+    padding-top: 20px;
+    font-weight: bold;
+}
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+section h3{
+    font-size: 35px;font-weight: 200;
+    word-spacing: 5px;
+   text-shadow: 1px 1px 3px black;
+}
+section h1{
+    font-size: 55px;
+    color: white;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+    margin-bottom: 20px;
+}
+section p{
+    font-size: 25px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    word-spacing: 2px;
+    text-shadow: 1px 1px 3px black;
+    padding-bottom: 20px;
+}
+section a{
+    font-size: 15px ;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 5px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-right: 30px;
+    transition: all .5s ease;
+    
+}
+section .bttn1{
+    background-color: white;
+    color: black;
+}
+.bttn1:hover{
+    background-color: #7a15d8;
+    
+}
+.bttn2:hover{
+    background-color: #9bce10;
+}
+section .bttn2{
+    background-color: #00b894;
+    color: white;
+}
+.change_content:after{
+    content: "";
+    animation: changetext 10s infinite linear;
+    color:#00b894 ;
+}
+@keyframes changetext{
+    0% {content :"Islamabad";}
+    10% {content :"Rawalpandi";}
+    20% {content :"Peshawar";}
+    30% {content :"Multan";}
+    40% {content :"Faisalabad";}
+   50% {content :"Quetta";}
+}
+header{
+     
+    animation: slider 80s infinite linear;
+    transition: ease;
+}
+@keyframes slider {
+    0% {background-image: url(../images/slider-apricot-tours-5.jpg);}
+    20% {background-image: url(../images/Badshahi-Mosque-Lahore-Cover-07-08.jpg);}
+    40% {background-image: url(../images/quaid.jpg);}
+    50% {background-image: url(../images/Screen-Shot-2017-11-18-at-11.08.28-PM.png);}
+    60% {background-image: url(../images/vally.jpg);}
+    70% {background-image: url(../images/bus-vehicle-travel-passenger.jpg);}
+    90% {background-image: url(../images/badshai.webp);}
+    100% {background-image: url(../images/nathiagali_restaurant_48.jpg);}
+}
+.menu :hover{
+    color:  #00b894;
+}
